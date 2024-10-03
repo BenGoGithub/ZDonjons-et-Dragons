@@ -1,0 +1,4 @@
+class Guerrier extends Personnage {
+
+
+}
