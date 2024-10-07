@@ -31,8 +31,7 @@ public  class EquipementOffensif {
     public void setNom(String nom) {
         this.nom = nom;
     }
-    public int getNiveauAttaque(int niveauAttaque) {
-        this.niveauAttaque = niveauAttaque;
+    public int getNiveauAttaque() {
         return niveauAttaque;
     }
 

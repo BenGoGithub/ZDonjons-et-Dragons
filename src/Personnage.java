@@ -14,7 +14,7 @@ public class Personnage {
     }
 
     public Personnage(String name){
-        //Donner une valeur par défaut au type, par exemple "Troll".
+        //Donner une valeur par défaut au type, par exemple "Guerrier".
         this(name, "Guerrier");
     }
 
@@ -36,13 +36,19 @@ public class Personnage {
             this.attack = 15;
             this.equipementDefensif = new EquipementDefensif("Philtre",3,"Brouillard");
             this.equipementOffensif = new EquipementOffensif("Sort","Feu",3);
+        } else {
+            this.type = "Voleur";
+            this.life = 8;
+            this.attack = 8;
+            this.equipementDefensif = new EquipementDefensif("Bouclier",2,"BouclierEnBois");
+            this.equipementOffensif = new EquipementOffensif("Arme","couteau",3);
         }
 
-    }    public String getName() {
+    }    public String getNom() {
         return name;
     }
 
-    public void setName(String name) {
+    public void setNom(String name) {
         this.name = name;
     }
 
